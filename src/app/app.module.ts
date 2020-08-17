@@ -44,7 +44,7 @@ import { environment } from '../environments/environment';
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebase),
   ],
-  providers: [AuthService,ChatService],
+  providers: [AuthService, ChatService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

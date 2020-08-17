@@ -9,7 +9,9 @@
     flex: 1;
     color: #fff;
     order: 1;
-    background-color: #2A2845;
+    background-color: #1176d4;
+    background: 
+    linear-gradient(80deg, rgba(100,200,355,20.6), rgba(0,0,0,0.9));
     padding: 20px 0px 40px 30px;
     border-right: 1px solid #222;
 }
