@@ -32,7 +32,8 @@ export class AuthService {
   login(user: User): Promise<void> {
     console.log('logging in...');
     return this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password)
-      .then(resolve => {
+      .then(user => {
+        this.authState = user;
         this.setUserStatus('online');
         this.router.navigate(['chat']);
       });
