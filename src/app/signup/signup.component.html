@@ -14,6 +14,7 @@
                 <input
                 type="password" name="password"
                 placeholder="Choose a password"
+                minlength="6"
                 [(ngModel)]="password" class="formInput"
                 required/>
             
@@ -22,13 +23,14 @@
                 name="displayName"
                 placeholder="Enter a display name"
                 [(ngModel)]="displayName" class="formInput"
-                maxlength="12" required/>
+                maxlength="9" required/>
 
                 <button [disabled]="!signupForm.form.valid"
                         type="submit" (click)="signUp()"
                         class="btn" id="btn-signUp">
                         Sign Up    
                 </button>
+            <Label *ngIf="errorMsg" class="error"> {{errorMsg}} </Label>
         </form>
     </div>
 </div>

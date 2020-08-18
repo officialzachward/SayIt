@@ -27,27 +27,29 @@ export class ChatService {
               }
 
   getUser(): any {
-    const userID = this.user.uid;
-    const path = `/users/${userID}`;
+    const userID: string = this.user.uid;
+    const path: string = `/users/${userID}`;
     return this.db.object(path).valueChanges();
   }
 
-  getUsers() {
-    const path = '/users';
-    return this.db.list(path);
+  getUsers(): any {
+    const path: string = '/users';
+    return this.db.list(path).valueChanges();
   }
 
   sendMessage(msg: string): void {
-    const timestamp = this.getTimeStamp();
-    const email = this.user.email;
+    const timestamp: number = this.getTimeStamp();
+    const email: string = this.user.email;
     this.chatMessages = this.getMessages();
 
+    console.log('retrieving timestamp...')
+    console.log(timestamp);
     // send our message
     this.db.list('messages').push({
       message: msg,
       timeSent: timestamp,
       username: this.userName,
-      email,
+      email: email,
     });
   }
 
@@ -55,14 +57,7 @@ export class ChatService {
     return this.db.list('messages', ref => ref.limitToLast(25).orderByKey()).valueChanges();
   }
 
-  getTimeStamp(): string {
-    const now = new Date();
-    const date = now.getUTCFullYear() + '/' +
-                 (now.getUTCMonth() + 1) + '/' +
-                 now.getUTCDate();
-    const time = now.getUTCHours() + ':' +
-                 now.getUTCMinutes() + ':' +
-                now.getUTCSeconds();
-    return (date + ' ' + time);
+  getTimeStamp(): number {
+    return new Date().getTime();
   }
 }

@@ -71,3 +71,9 @@ a {
 .label {
     font-size: 0.9em;
 }
+
+.error {
+    font-size: 0.8em;
+    color: darkred;
+    font-style: italic;
+}

@@ -1,1 +1,25 @@
-<p>login works!</p>
+<div class="container">
+    <div class="loginCard">
+      <h2 class="heading">Log In</h2>
+        <input 
+          [(ngModel)]="email"
+          type="email" 
+          name="email"
+          placeholder="Enter your email" 
+          class="formInput" />
+        <input type="password" 
+          [(ngModel)]="password"
+          name="password"
+          placeholder="Enter your password" 
+          class="formInput" />
+        <button class="btn" 
+                id="btn-login" 
+                (click)="login()">
+                Log In
+        </button>
+        
+        <span>
+          <Label class="error" *ngIf="errorMsg">Failed to login, try again!</Label>
+        </span>
+    </div>
+  </div>

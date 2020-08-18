@@ -4,7 +4,7 @@
             {{ userName }}
         </span>
         <span class="timestamp">
-            {{ timeStamp }}
+            {{ timeStamp | date:'shortTime' }}
         </span>
     </div>
     <div class="messageContent">

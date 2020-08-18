@@ -5,5 +5,5 @@ export class ChatMessage {
     email?: string;
     username?: string;
     message?: string;
-    timeSent?: string;
+    timeSent?: Date;
 }

@@ -25,7 +25,12 @@ export class AuthService {
     return this.authState !== null ? this.authState.user.uid : '';
   }
 
+  authUser(): Observable<firebase.User> {
+    return this.user;
+  }
+
   login(user: User): Promise<void> {
+    console.log('logging in...');
     return this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password)
       .then(resolve => {
         this.setUserStatus('online');
@@ -39,7 +44,8 @@ export class AuthService {
       .then((authuser) => {
         this.authState = authuser;
         this.setUserData(user.email, user.username, 'online');
-      }).catch(error => console.log(error));
+        this.router.navigate(['chat']);
+      });
   }
 
   setUserData(email: string, username: string, status: string): void {

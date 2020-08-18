@@ -15,6 +15,9 @@ export class SignupComponent {
   displayName: string;
   errorMsg: string;
 
+  instructions: string = 'Please make sure that:\n (1) Your email is valid \n '+
+  '(2) Your password is at least 6 characters and \n (3) Your display name is at ' +
+  'least 12 characters long';
   constructor(private auth: AuthService,
               private router: Router) { }
 
@@ -25,8 +28,10 @@ export class SignupComponent {
         username: this.displayName
       };
 
-      this.auth.register(user)
-        .then(resolve => this.router.navigate(['chat']))
-        .catch(error => this.errorMsg = error.message);
+      this.auth.register(user).catch(error => this.handleError(error.message));
+    }
+
+    handleError(errMessage: string): void {
+      this.errorMsg = errMessage;
     }
 }
