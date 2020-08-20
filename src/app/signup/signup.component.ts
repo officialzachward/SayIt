@@ -15,7 +15,7 @@ export class SignupComponent {
   displayName: string;
   errorMsg: string;
 
-  instructions: string = 'Please make sure that:\n (1) Your email is valid \n '+
+  instructions: string = 'Please make sure that:\n (1) Your email is valid \n ' +
   '(2) Your password is at least 6 characters and \n (3) Your display name is at ' +
   'least 12 characters long';
   constructor(private auth: AuthService,

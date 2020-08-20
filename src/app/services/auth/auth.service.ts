@@ -12,13 +12,11 @@ import { User } from '../../models/user.model';
 export class AuthService {
   private user: Observable<firebase.User>;
   private authState: firebase.auth.UserCredential;
-  // private currentUserId: string;
 
   constructor(private afAuth: AngularFireAuth,
               private db: AngularFireDatabase,
               private router: Router) {
                 this.user = afAuth.authState;
-                // this.currentUserId = this.authState !== null ? this.authState.uid : '';
                }
 
   get currentUserId(): string {
@@ -29,11 +27,16 @@ export class AuthService {
     return this.user;
   }
 
+  logout(): void {
+    this.afAuth.auth.signOut();
+    this.router.navigate(['login']);
+  }
+
   login(user: User): Promise<void> {
     console.log('logging in...');
     return this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password)
-      .then(user => {
-        this.authState = user;
+      .then((account) => {
+        this.authState = account;
         this.setUserStatus('online');
         this.router.navigate(['chat']);
       });

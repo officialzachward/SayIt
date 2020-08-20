@@ -28,12 +28,12 @@ export class ChatService {
 
   getUser(): any {
     const userID: string = this.user.uid;
-    const path: string = `/users/${userID}`;
+    const path = `/users/${userID}`;
     return this.db.object(path).valueChanges();
   }
 
   getUsers(): any {
-    const path: string = '/users';
+    const path = '/users';
     return this.db.list(path).valueChanges();
   }
 
@@ -42,14 +42,14 @@ export class ChatService {
     const email: string = this.user.email;
     this.chatMessages = this.getMessages();
 
-    console.log('retrieving timestamp...')
+    console.log('retrieving timestamp...');
     console.log(timestamp);
     // send our message
     this.db.list('messages').push({
       message: msg,
       timeSent: timestamp,
       username: this.userName,
-      email: email,
+      email,
     });
   }
 

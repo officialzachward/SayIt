@@ -22,13 +22,13 @@ export class LoginComponent implements OnInit {
     const user: User = {
       email: this.email,
       password: this.password,
-    }
+    };
     this.authService.login(user).catch(error => this.handleError(error.message));
   }
 
   handleError(errorMessage: string) {
     this.errorMsg = errorMessage;
-    console.log("HANDLE ERROR PRINTING...")
+    console.log('HANDLE ERROR PRINTING...');
     console.log(this.errorMsg);
   }
 

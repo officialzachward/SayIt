@@ -33,8 +33,12 @@ npm-debug.log
 yarn-error.log  
 testem.log  
 /typings  
+firebase-config.js
   
 # System Files  
 .DS_Store  
-Thumbs.db  
+Thumbs.db
+.firebase
+functions
+y  
 
