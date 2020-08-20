@@ -1,18 +1,25 @@
-# Chatapp
+# ChatApp Prototype
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+This project was started with the intention of exploring Angular. At my last internship,
+I was exposed to Angular for the first time; naturally, I wanted to apply what I learned.
+If you are interested in trying out this app, it should be currently deployed at:
+`https://chatapp-39851.web.app/signup`
 
-## Development server
+## Running this app locally
+
+*NOTE*: You may notice a `firebase-config.js` mentioned in this codebase, even though it does
+not exist in the repo. This is because I don't want you to have my firebase info!! If you
+want to play with this locally, just note that you'll need to set up firebase *yourself*.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
+## Building
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Deploying
+Run `firebase init` to tell firebase what to deploy for you. Then, run `firebase deploy` to
+deploy the relevant code to firebase! Note, you have to pay a few cents for this (Blaze pay as you go).
 
 ## Running unit tests
 
@@ -21,7 +28,3 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
