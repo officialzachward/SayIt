@@ -15,7 +15,7 @@
 }
 
 .userItem:hover{
-    background-color: #31c40c;
+    background-color: #0a138b;
     color: #ddd;
     transition: ease-in 0.1s;
 }

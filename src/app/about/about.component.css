@@ -90,15 +90,6 @@
     color: darkred;
 }
 
-#btn-signUp{
-    background-color:#2A2845;
-}
-
-#btn-signUp:hover{
-    background-color:#ffffff;
-    transition: ease-in 0.2s;
-}
-
 #btn-login{
     background-color:#0375d3;
 }
