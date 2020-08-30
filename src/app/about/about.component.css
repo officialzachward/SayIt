@@ -1,16 +1,16 @@
 .doHyeon {
-  font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Do Hyeon', sans-serif;
 }
-
+  
 .container{
     height: 100%;
     overflow:hidden;
     background: 
-      linear-gradient(270deg, rgba(236, 209, 208, 0.3), rgba(132, 215, 229, 0.9)),
-      url('../../assets/images/background.png') center center no-repeat;;
-  }
-  
-  .loginCard{
+    linear-gradient(270deg, rgba(236, 209, 208, 0.3), rgba(132, 215, 229, 0.9)),
+    url('../../assets/images/background.png') center center no-repeat;;
+}
+
+.aboutCard{
     display: block;
     border: 1px solid #000;
     border-radius: 4px;
@@ -23,14 +23,39 @@
     padding: 80px 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.17), 0 1px 2px rgba(0,0,0,0.24);
     overflow: hidden;
-  }
-
-  .loginCard:hover {
+}
+  
+.aboutCard:hover {
     background-color: rgb(213, 213, 219);
     transition: ease-in 0.2s;
-  }
-  
-  .formInput{
+}
+
+.extrasCard{
+    display: border-box;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.85);
+    width: 500px;
+    height: 100px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    padding: 40px 40px 40px 40px;
+    padding-bottom: 100px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.17), 0 1px 2px rgba(0,0,0,0.24);
+    overflow: hidden;
+}
+
+.extrasCard:hover {
+    background-color: rgb(213, 213, 219);
+    transition: ease-in 0.2s;
+}
+
+.extra {
+    display: inline-block;
+}
+    
+.formInput{
     margin: auto;
     margin-top: 16px;
     display: block;
@@ -41,9 +66,9 @@
     border: #ccc 1px solid;
     padding: 8px;
     font-size:1em;
-  }
-  
-  .btn{
+}
+    
+.btn{
     height: 54px;
     width: 100%;
     margin: auto;
@@ -57,40 +82,40 @@
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(5, 98, 185, 0.17), 0 1px 2px rgba(42, 220, 233, 0.24);
     transition: ease-in 0.2s;
-  }
+}
 
-  .error {
+.error {
     flex-direction: column;
     padding: 20px;
     color: darkred;
-  }
-  
-  #btn-signUp{
-      background-color:#2A2845;
-  }
-  
-  #btn-signUp:hover{
-      background-color:#06ff27;
-      transition: ease-in 0.2s;
-  }
-  
-  #btn-login{
-      background-color:#0375d3;
-  }
-  
-  #btn-login:hover{
-      background-color:#07a81c;
-      transition: ease-in 0.2s;
-  }
-  
-  h2{
-      height: 2em;
-  }
-  
-  a {
-      text-decoration: none;
-  }
+}
 
-  .label {
+#btn-signUp{
+    background-color:#2A2845;
+}
+
+#btn-signUp:hover{
+    background-color:#ffffff;
+    transition: ease-in 0.2s;
+}
+
+#btn-login{
+    background-color:#0375d3;
+}
+
+#btn-login:hover{
+    background-color:#0a138b;
+    transition: ease-in 0.2s;
+}
+
+h2{
+    height: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.label {
     font-size: 0.9em;
 }

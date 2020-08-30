@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="aboutCard doHyeon">
+      <h2 class="heading">About SayIt</h2>
+        <button class="btn doHyeon" 
+                id="btn-login" 
+                (click)="toggleTechStack()">
+                Tech Stack
+        </button>
+        <button class="btn doHyeon"
+                id="btn-login"
+                (click)="toggleContributors()">
+                Contributors </button>
+                <button class="btn doHyeon"
+                id="btn-login"
+                (click)="toggleFeatures()">
+                Features </button>
+        
+        <span>
+          <Label class="error" *ngIf="errorMsg"> {{errorMsg}} </Label>
+        </span>
+    </div>
+    <div *ngIf="anyToggles()" class="extrasCard doHyeon">
+        <span class="extra">
+            <label *ngIf="showTech()">Made with Angular 8 and Google's Firebase.</label>
+        </span>
+        <span class="extra">  
+            <label *ngIf="showContributors()" >Solo Contributor: Zachary Ward</label>
+        </span>
+        <span class="extra">
+            <mark *ngIf="showFeatures()">FEATURES: Responsive Messaging, Interactive About Page </mark>
+        </span>
+    </div>
+  </div>

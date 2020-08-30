@@ -6,16 +6,16 @@
     margin-right: 10px;
     border-radius: 1px;
     align-items:flex-start;
-    background-color: #0a588d;
+    background-color: #004ffa;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    color: #A098A5;
+    color: #ffffff;
     border-radius: 32px;
     transition: ease-in 0.2s;
     font-family: 'Do Hyeon', sans-serif;
 }
 
 .userItem:hover{
-    background-color: #3a0cc4;
+    background-color: #31c40c;
     color: #ddd;
     transition: ease-in 0.1s;
 }

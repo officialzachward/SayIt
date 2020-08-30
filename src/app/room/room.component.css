@@ -11,7 +11,7 @@
     order: 1;
     background-color: #1176d4;
     background: 
-    linear-gradient(80deg, rgba(100,200,355,20.6), rgba(0,0,0,0.9));
+    linear-gradient(100deg, rgba(10, 154, 190, 0.3), rgba(243, 243, 247, 0.9));
     padding: 20px 0px 40px 30px;
     border-right: 1px solid #222;
 }
@@ -26,7 +26,7 @@
     background-color: #fff;
     background: 
     linear-gradient(180deg, rgba(100,200,255,0.6), rgba(0,0,0,0.9)),
-    url('../../assets/images/chat_logo.png') center center no-repeat;;
+    url('../../assets/images/background.png') center center no-repeat;;
 }
 
 .chatFormWrapper {

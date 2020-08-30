@@ -2,7 +2,8 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: #026f7e;
+    background: linear-gradient(100deg, rgba(10, 154, 190, 0.3), rgba(243, 243, 247, 0.9));
+    /* background-color: #0a20e9; */
     font-family: 'Do Hyeon', sans-serif;
 }
 
@@ -46,7 +47,7 @@
 }
 
 .links a:hover {
-    color: #1E88E5;
+    color: #004ffa;
     transition: ease-in 0.2s;
 }
 

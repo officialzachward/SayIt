@@ -15,7 +15,7 @@
 }
 
 .chatButton {
-    background-color: rgb(0, 255, 234); /* Green */
+    background-color: #004ffa;
     border: none;
     color: black;
     padding: 5px 10px;
@@ -27,5 +27,5 @@
   }
 
   .chatButton:hover {
-      background-color: darkcyan;
+      background-color: #31c40c;
   }

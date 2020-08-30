@@ -20,6 +20,8 @@ import { ChatService } from './services/chat/chat.service';
 import { AuthService } from './services/auth/auth.service';
 import { appRoutes } from '../routes';
 import { environment } from '../environments/environment';
+import { AboutComponent } from './about/about.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { environment } from '../environments/environment';
     SignupComponent,
     NavbarComponent,
     UserlistComponent,
-    UserComponent
+    UserComponent,
+    AboutComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
