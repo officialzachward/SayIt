@@ -1,4 +1,4 @@
-# ChatApp Prototype
+# 'SayIt' Prototype
 
 This project was started with the intention of exploring Angular. At my last internship,
 I was exposed to Angular for the first time; naturally, I wanted to apply what I learned.
