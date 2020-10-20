@@ -1,5 +1,7 @@
 # 'SayIt' Prototype
 
+This project is by Zachary Ward.
+
 This project was started with the intention of exploring Angular. At my last internship,
 I was exposed to Angular for the first time; naturally, I wanted to apply what I learned.
 If you are interested in trying out this app, it should be currently deployed at:
